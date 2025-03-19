@@ -69,12 +69,4 @@ Ensure your dataset is structured as follows:
  ├── 📂 NEW_NORMAL     # New test dataset (Normal)
 ```
 
----
-
-## **Next Steps**
-✅ Test the model on a different dataset to check generalization.  
-✅ If accuracy is low, consider retraining on a larger dataset.  
-✅ Experiment with different values of `K` in K-Means clustering.  
-
-Feel free to improve the model or integrate deep learning for better accuracy! 🚀
 
