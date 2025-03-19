@@ -24,14 +24,14 @@ python Feature_Extraction.py
 
 ---
 
-### 2️⃣ **Training the SVM (`train_svm.py`)**
+### 2️⃣ **Training the SVM (`trainsvm.py`)**
 - Uses **K-Means clustering** to form visual words (BoVW model).
 - Normalizes the features and **trains an SVM model**.
 - Saves the trained models for later classification.
 
 #### **How to Run**
 ```bash
-python train_svm.py
+python trainsvm.py
 ```
 
 #### **Output Files**
