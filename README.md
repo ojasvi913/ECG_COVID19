@@ -10,13 +10,13 @@ The process follows these steps:
 4. **Test the trained SVM** on a new dataset.
 
 ## **Scripts and Their Functions**
-### 1️⃣ **Feature Extraction (`extract_sift_features.py`)**
+### 1️⃣ **Feature Extraction (`Feature_Extraction.py`)**
 - Extracts **SIFT features** from all ECG images.
 - Saves the extracted features for later use.
 
 #### **How to Run**
 ```bash
-python extract_sift_features.py
+python Feature_Extraction.py
 ```
 
 #### **Output Files**
