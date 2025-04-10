@@ -68,5 +68,6 @@ Ensure your dataset is structured as follows:
  ├── 📂 NEW_COVID      # New test dataset (COVID)
  ├── 📂 NEW_NORMAL     # New test dataset (Normal)
 ```
-
+## **Dataset Source**
+Dataset taken from Khan, Ali Haider; Hussain, Muzammil  (2020), “ECG Images dataset of Cardiac and COVID-19 Patients”, Mendeley Data, V1, doi: 10.17632/gwbz3fsgp8.1
 
