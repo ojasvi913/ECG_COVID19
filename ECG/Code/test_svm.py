@@ -5,13 +5,13 @@ import joblib
 from sklearn.metrics import accuracy_score, classification_report
 
 # Paths to saved models
-kmeans_model_path = "kmeans_model.pkl"
-scaler_path = "scaler.pkl"
-svm_model_path = "svm_model.pkl"
+kmeans_model_path = "ECG/kmeans_model.pkl"
+scaler_path = "ECG/scaler.pkl"
+svm_model_path = "ECG/svm_model.pkl"
 
 # Paths to new test dataset
-new_covid_path = "NEW_COVID"   # Change to your test dataset folder
-new_non_covid_path = "NEW_NORMAL"
+new_covid_path = "ECG/COVID"   # Change to your test dataset folder
+new_non_covid_path = "ECG/NORMAL"
 
 # Load trained models
 print("Loading trained models...")

@@ -5,9 +5,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report
 
 # File paths for saved features
-bovw_features_path = "bovw_features.npy"
-labels_path = "labels.npy"
-svm_model_path = "svm_model.pkl"
+bovw_features_path = "ECG/bovw_features.npy"
+labels_path = "ECG/labels.npy"
+svm_model_path = "ECG/svm_model.pkl"
 
 # Load features and labels
 print("Loading features and labels...")

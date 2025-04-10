@@ -9,14 +9,14 @@ import joblib  # For saving k-means model
 sift = cv2.SIFT_create()
 
 # Path to your dataset
-covid_path = "COVID"
-non_covid_path = "NORMAL"
+covid_path = "ECG/COVID"
+non_covid_path = "ECG/NORMAL"
 
 # File paths for saved features
-bovw_features_path = "bovw_features.npy"
-labels_path = "labels.npy"
-kmeans_model_path = "kmeans_model.pkl"
-scaler_path = "scaler.pkl"
+bovw_features_path = "ECG/bovw_features.npy"
+labels_path = "ECG/labels.npy"
+kmeans_model_path = "ECG/kmeans_model.pkl"
+scaler_path = "ECG/scaler.pkl"
 
 def extract_sift_features(image_path):
     """Extracts SIFT keypoints and descriptors from an image."""
