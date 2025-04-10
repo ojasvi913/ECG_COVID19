@@ -10,8 +10,8 @@ scaler_path = "ECG/scaler.pkl"
 svm_model_path = "ECG/svm_model.pkl"
 
 # Paths to new test dataset
-new_covid_path = "ECG/COVID"   # Change to your test dataset folder
-new_non_covid_path = "ECG/NORMAL"
+new_covid_path = "ECG/NEW_COVID"   # Change to your test dataset folder
+new_non_covid_path = "ECG/NEW_NORMAL"
 
 # Load trained models
 print("Loading trained models...")
@@ -42,8 +42,13 @@ def create_bovw_histogram(descriptors, kmeans):
 
 # Extract features from the new dataset
 print("Extracting features from new dataset...")
-covid_features = [extract_sift_features(os.path.join(new_covid_path, f)) for f in os.listdir(new_covid_path)]
-non_covid_features = [extract_sift_features(os.path.join(new_non_covid_path, f)) for f in os.listdir(new_non_covid_path)]
+# Only process up to 100 images from each category
+covid_files = os.listdir(new_covid_path)[:100]
+non_covid_files = os.listdir(new_non_covid_path)[:100]
+
+covid_features = [extract_sift_features(os.path.join(new_covid_path, f)) for f in covid_files]
+non_covid_features = [extract_sift_features(os.path.join(new_non_covid_path, f)) for f in non_covid_files]
+
 
 # Remove None values (if any images failed to load)
 covid_features = [desc for desc in covid_features if desc is not None]

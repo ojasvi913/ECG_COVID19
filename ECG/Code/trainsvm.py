@@ -36,3 +36,4 @@ print("Saving trained SVM model...")
 joblib.dump(svm, svm_model_path)
 
 print("SVM training complete! Model saved as 'svm_model.pkl'.")
+
